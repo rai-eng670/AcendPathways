@@ -1,2 +1,209 @@
-# AcendPathways
-the pathway
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ascend Pathways</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    background: radial-gradient(circle at top, #0a0f2c, #050814);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo span {
+    background: linear-gradient(45deg, #7a5cff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login {
+    background: transparent;
+    border: 1px solid #7a5cff;
+    color: white;
+}
+
+.cta {
+    background: linear-gradient(45deg, #7a5cff, #00c6ff);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    letter-spacing: 5px;
+}
+
+.hero h2 {
+    color: #7a5cff;
+    margin-top: 10px;
+    letter-spacing: 8px;
+}
+
+.hero p {
+    margin-top: 20px;
+    color: #aaa;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.buttons button {
+    margin: 10px;
+}
+
+/* ROAD ANIMATION */
+.road {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 300px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #7a5cff,
+        #00c6ff,
+        transparent
+    );
+    opacity: 0.2;
+    filter: blur(40px);
+    animation: moveRoad 6s linear infinite;
+}
+
+@keyframes moveRoad {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* FEATURE BAR */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+    padding-bottom: 60px;
+    color: #ccc;
+}
+
+.feature {
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        ⚡ <span>ASCEND</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Schools</a>
+        <a href="#">Resources</a>
+    </div>
+
+    <div>
+        <button class="btn login">Log In</button>
+        <button class="btn cta">Get Started</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <!-- Replace with your actual logo image later -->
+    <img src="https://via.placeholder.com/120" alt="logo">
+
+    <h1>ASCEND</h1>
+    <h2>PATHWAYS</h2>
+
+    <p>
+        Discover your future, plan your path, and take control of your success.
+        Built for students ready to level up.
+    </p>
+
+    <div class="buttons">
+        <button class="btn cta">Get Started →</button>
+        <button class="btn login">Explore Careers</button>
+    </div>
+</section>
+
+<div class="features">
+    <div class="feature">🚀 Career Discovery</div>
+    <div class="feature">🧭 Plan Your Path</div>
+    <div class="feature">🤝 Connect & Grow</div>
+    <div class="feature">📈 Achieve Success</div>
+</div>
+
+<div class="road"></div>
+
+</body>
+</html>
